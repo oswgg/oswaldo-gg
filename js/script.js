@@ -1,12 +1,14 @@
 // ------- Variables
 
 const nav = document.querySelector('.nav');
-
+const openMenu = document.getElementById('open-menu');
 
 
 // ------- EventListeners
 document.addEventListener('DOMContentLoaded', animate);
 window.addEventListener('scroll', changeColorNav);
+window.addEventListener('click', moverMenu);
+
 
 // ------- Funciones
 
@@ -31,9 +33,24 @@ function animate() {
 }
 
 function changeColorNav() {
-    if( scrollY !== 0 ) {
-        nav.style.background = '#050505';
+    if( window.innerWidth > 425 ) {
+        if( scrollY !== 0 ) {
+            nav.style.background = '#050505';
+        } else {
+            nav.style.background = 'none';
+        }
     } else {
-        nav.style.background = 'none';
+        if( scrollY > window.innerHeight - 10) {
+            openMenu.style.fill = '#050505';
+        } else {
+            openMenu.style.fill = '#ffff';
+        }
     }
 }
+
+function moverMenu(e) {
+    if( e.target === openMenu || e.target.classList.contains('nav-menu__link') || e.target.classList.contains('nav') ) {
+        nav.classList.toggle('move-menu')
+    }
+}
+
