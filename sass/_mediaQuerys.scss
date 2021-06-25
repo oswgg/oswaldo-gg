@@ -9,7 +9,52 @@
     body {
         font-size: 12px;
     }
-    .header{
+
+   
+    #open-menu {
+        display: inline-block;
+        position: fixed;
+        z-index: 100;
+        top: 18px;
+        right: 18px;
+        fill: var(--color-main);
+        transform: translateX(0);
+        width: 24px;
+        height: 24px;
+        transition: fill .2s;
+    }
+    
+    nav.nav.move-menu{
+        transform: translateX(0);
+    }
+
+    .nav {
+        background: #050505a8;
+        padding-top: 25px;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform .3s ease-in-out;
+        
+
+        
+
+
+        .nav__content {
+            flex-direction: column;
+
+            .nav__menu {
+                margin-top: 30px;
+                flex-direction: column;
+
+                .nav-menu__item {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    .header {
         .header-img__container {
             top: 50%;
             left: 50%;
