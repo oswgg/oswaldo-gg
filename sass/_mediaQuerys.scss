@@ -1,0 +1,59 @@
+@media screen and (max-width: 1024px) {
+    .skills__content {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        font-size: 12px;
+    }
+    .header{
+        .header-img__container {
+            top: 50%;
+            left: 50%;
+            animation: move-img-mobile 2s forwards;
+        }
+
+        .header-text__container {
+            opacity: 0;
+            animation: move-text-mobile 1.5s .3s forwards;
+        }
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .proyects{
+        .proyect__container {
+            width: 100%;
+        }
+    }
+
+    .skills__content {
+        height: auto;
+        margin-top: 10%;
+
+        .skills-text {
+            text-align: center;
+        }
+    
+        .skills__container {
+            margin-top: 30%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .contact {
+
+        .contact__main {
+            
+            .roulette {
+                height: 17px;
+            }
+        }
+    }
+}

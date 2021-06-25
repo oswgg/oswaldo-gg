@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- CSS Custom -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Poppins Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OGG | Frontend Developer</title>
+</head>
+<body>
+
+	<svg id="open-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" transform:-ms-filter"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path></svg>
+	
+	<nav class="nav">
+		<div class="nav__content">
+			<div class="nav-logo__container">
+				OGG
+			</div>
+			<ul class="nav__menu">
+				<li class="nav-menu__item"><a class="nav-menu__link" href="#home">Inicio</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="#about">Acerca de</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="#portfolio">Portafolio</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="#skills">Habilidades</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="#contact">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="header" id="home">
+		<div class="header__container">
+
+			<div class="header-img__container">
+				<img src="Multimedia/me.png" alt="Oswaldo Gonzalez">
+			</div>
+
+			<div class="header-text__container">
+				<span id="hi">Hola!</span>
+				<h1 class="header__title">
+					Soy Oswaldo González
+				</h1>
+				<span id="speciality">Frontend Developer</span>
+			</div>
+
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="section about" id="about">
+			<div class="container about-me" >
+				<h2 class="title about__title">Sobre mi</h2>
+				<p class="text about__text anim" data-type="anim-vertical">
+					Mi nombre es <span class="name"><b>Oswaldo González González.</b></span>
+					Frontend Developer. Actualmente me encuentro estudiando la especialidad de técnico en
+					programación pero no me conformo con esto, es por eso que me encuentro aquí, en busca de 
+					experiencia creando proyectos propios o volviendo realidad el tuyo.
+				</p>
+			</div>
+		</section>
+
+		
+		<section class="section portfolio" id="portfolio">
+			<div class="container proyects" >	
+
+				<h2 class="title portfolio__title">Mis trabajos</h2>
+				<p class="text portfolio__text anim" data-type="anim-vertical">Aquí una muestra de los últimos proyectos en los que he trabajado</p>
+				
+
+				<div class="proyect__container">
+					<div class="proyect anim" data-type="anim-horizontal-left">
+						<img class="proyect__img" src="Multimedia/weather-app.png" alt="">
+						<div class="proyect-text__container">
+							<h4 class="proyect__title">Weather app</h4>
+							<p class="proyect__text">Website: Javascript, HTML, CSS </p>
+							<ul class="links">
+								<a class="links__item" href="https://github.com/soyoswaldogg/weather-app" target="_blank">Repositorio</a>
+								<a class="links__item" href="https://soyoswaldogg.github.io/weather-app/" target="_blank">Visitar el sitio</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="proyect__container">
+					<div class="proyect anim" data-type="anim-horizontal-right">
+						<img class="proyect__img" src="Multimedia/enviar-correo.png" alt="">
+						<div class="proyect-text__container">
+							<h4 class="proyect__title">Envio de Correo (Simulador)</h4>
+							<p class="proyect__text">Website: Javascript, HTML </p>
+							<ul class="links">
+								<a class="links__item" href="https://github.com/soyoswaldogg/Simulador-enviar-correo" target="_blank">Repositorio</a>
+								<a class="links__item" href="https://soyoswaldogg.github.io/Simulador-enviar-correo/" target="_blank">Visitar el sitio</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="proyect__container">
+					<div class="proyect anim" data-type="anim-horizontal-left">
+						<img class="proyect__img" src="Multimedia/glassmorphism.png" alt="">
+						<div class="proyect-text__container">
+							<h4 class="proyect__title">Glassmorphism (Efecto)</h4>
+							<p class="proyect__text">Website: HTml, SASS, CSS </p>
+							<ul class="links">
+								<a class="links__item" href="https://github.com/soyoswaldogg/glassmorphism-effect" target="_blank">Repositorio</a>
+								<a class="links__item" href="https://soyoswaldogg.github.io/glassmorphism-effect/" target="_blank">Visitar el sitio</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class="section my-skills" id="skills">
+			<div class="container skills" >
+				
+				<h2 class="title skills__title">Skills:</h2>
+				
+				<div class="skills__content">
+					<div class="skills-text anim" data-type="anim-horizontal-left">
+						<p class="skills__text">
+							En éste espacio puedes ver las tecnologías que domino
+						</p>
+					</div>
+					
+					<div class="skills__container anim" data-type="anim-horizontal-right">
+						<div class="skill__container">
+							<img class="skill__img" src="Multimedia/html.svg" alt="">				
+							<p>HTML</p>
+						</div>
+					
+						<div class="skill__container">
+							<img class="skill__img" src="Multimedia/css.svg" alt="">				
+							<p>CSS</p>
+						</div>
+					
+						<div class="skill__container">
+						<img class="skill__img" src="Multimedia/javascript.svg" alt="">				
+							<p>Javascript</p>
+						</div>
+				</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section contact" id="contact">
+			<div class="container contact__main" >
+				<h2 class="title contact__title">Oswaldo González</h2>	
+				<div class="roulette">
+					<p class="made-in">Orgullosamente:&nbsp;</p>
+					<ul id="in">
+						<li class="in__item"> Mexicano</li>
+						<li class="in__item"> Tampiqueño</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container contact-redes__container" >
+				<a class="social-red" href="https://twitter.com/soyoswaldo_gg" target="_blank">
+					<img class="social-red__img" src="Multimedia/twitter.svg" alt="">
+					<div class="social-red__text">
+						<p>Twitter</p>
+					</div>
+				</a>
+				<a class="social-red" href="https://instagram.com/soyoswaldo.gg" target="_blank">
+					<img class="social-red__img" src="Multimedia/instagram.svg" alt="">
+					<div class="social-red__text">
+						<p>Instagram</p>
+					</div>
+				</a>
+				<a class="social-red" href="https://github.com/soyoswaldogg" target="_blank">
+					<img class="social-red__img" src="Multimedia/github.svg" alt="">
+					<div class="social-red__text">
+						<p>Github</p>
+					</div>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="footer__text">
+			Copyright © 2021 | Oswaldo Gonzalez<br>
+			All rights reserved
+		</p>
+	</footer>
+	
+
+	<!-- Script personalizado -->
+	<script src="js/script.js"></script>
+</body>
+</html>

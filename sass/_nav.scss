@@ -1,0 +1,52 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    color: #fff;
+    padding: 20px 0;
+    transition: background .3s;
+
+    .nav__content {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-logo__container {
+        color: #ffff;
+        font-size: 1em;
+    }
+
+    .nav__menu {
+        display: flex;
+
+        .nav-menu__item {
+            list-style: none;
+            margin-left: 35px;
+        }
+
+        .nav-menu__link {
+            font-size: .8em;
+            text-decoration: none;
+            color: #fff;
+
+
+            &:hover {
+                color: var(--color-sec);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

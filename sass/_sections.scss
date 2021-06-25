@@ -1,0 +1,226 @@
+.section {
+    min-height: 100vh;
+    max-height: max-content;
+    display: grid;
+    place-items: center;
+    overflow: hidden
+}
+
+.container {
+    width: 70%;
+    margin: auto
+}
+
+// -------------- About -------------
+.about {
+    padding: 70px 0;
+    width: 85%;
+    margin: auto;
+
+    .about__title {
+        text-align: center
+    }
+    
+    .about__text {
+        margin-top: 10px;
+        line-height: 2
+    }
+
+}
+
+// -------------- Portfolio -------------
+
+.portfolio {
+    width: 100%;
+    text-align: center;
+    background: var(--color-sec);
+    padding: 100px 0;
+
+    .portfolio__title {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .portfolio__text {
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+}
+
+
+// -------------- Proyects -------------
+
+.proyects {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .proyect__container {
+        width: 45%;
+        display: flex;
+        margin: 10px 10px;
+
+        .proyect {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+
+            &:hover>.proyect-text__container {
+                transform: translateY(0);
+            }
+            
+            &:hover>.proyect__img {
+                transform: scale(1.1);
+            }
+            
+        }
+
+        .proyect__img {
+            width: 100%;
+            height: 100%;
+            transition: transform .5s;
+        }
+
+        .proyect-text__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(100%);
+            background: #000000d8;
+            transition: transform .5s;;
+        }
+
+        .proyect__title {
+            color: var(--color-name);
+            font-size: 1.2em;
+        }
+        
+        .proyect__text {
+            color: #fff;
+            font-size: .9em;
+        }
+
+        .links__item {
+            font-size: .8em;
+            display: inline-block;
+            text-decoration: none;
+            color: #ff6666b9;
+            margin: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+            
+        }
+    }
+}
+
+// -------------- Skills -------------
+.skills{
+    .skills__title{
+        text-align: center;
+    }
+
+    .skills__content {
+        display: flex;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-between;
+        
+        .skills__container {
+            display: flex;
+
+            .skill__container {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+                
+                .skill__img {
+                    width: 60px;
+                }
+            }
+        }
+
+    }
+}
+
+// -------------- Contact -------------
+
+.contact {
+    padding: 20px 0;
+    text-align: center;
+    margin: 40px auto 0 auto;
+
+    .contact__main {
+        display: -ms-grid;
+        display: grid;
+        place-items: center;
+
+        .roulette {
+            display: flex;
+            overflow: hidden;
+            height: 25px;
+
+            #in {
+                list-style: none;
+                text-align: left;
+                animation: listAnimation 6s infinite;
+            }
+
+        }
+    }
+
+    .contact-redes__container {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        .social-red {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            .social-red__img {
+                width: 2em;
+            }
+            
+            .social-red__text {
+                color: #000;
+                font-size: 1em;
+            }
+        }
+    }  
+    
+}
+
+
+
+// -------------- Contact -------------
+
+
+.footer {
+    text-align: center;
+    background: #050505;
+    padding: 10px 0;
+
+    .footer__text {
+        color: #ffff;
+        font-size: 0.7em;
+    }
+    
+}
+
