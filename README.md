@@ -6,4 +6,4 @@ Mi página web, usando HTML, SASS, CSS, JavaScript.
 
 (Aún en construcción).
 
-Link: https://isuppu.github.io/oswaldo-g/
+Link: https://soyoswaldogg.github.io/oswaldo-g/
