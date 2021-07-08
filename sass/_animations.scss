@@ -134,6 +134,44 @@
 }
 
 
+@keyframes anim-vertical-disappear {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+
+@keyframes anim-horizontal-left-disappear {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes anim-horizontal-right-disappear {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
 @keyframes listAnimation {
     0% {
         transform: translateY(0);

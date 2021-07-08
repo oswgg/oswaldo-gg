@@ -2,12 +2,15 @@
 
 const nav = $('.nav');
 const openMenu = $('#open-menu');
-
+const d = document;
+const w = window;
 
 // ------- EventListeners
 $(document).ready(animate);
 
 $(window).scroll(changeColorNav);
+
+
 
 openMenu.click(moverMenu);
 $('.nav-menu__link').click(moverMenu)
@@ -16,22 +19,22 @@ $('.nav-menu__link').click(moverMenu)
 
 function animate() {
     
-    const animations = document.querySelectorAll('.anim');
-        
-    const observer = new IntersectionObserver( entries => {
-       entries.forEach(entry =>  {
-            if ( entry.intersectionRatio > 0 ) {
-                entry.target.style.animation = `${entry.target.dataset.type} 1s forwards`
-            } else { 
-                entry.target.style.animation = 'none';
-            }
+    const toAnimate = d.querySelectorAll('.section');
+
+    const cb = (entries) => {
+        entries.forEach( entry => {
+
+            const anim = entry.target.querySelectorAll('.anim');
+
+            entry.isIntersecting 
+            ? anim.forEach( el => el.style.animation = `${el.dataset.type} .8s forwards`)
+            : anim.forEach( el => el.style.animation = `${el.dataset.type}-disappear .8s forwards`);
         })
-    });
+    }
 
-    animations.forEach( item => {
-        observer.observe(item)
-    } )
+    const observer = new IntersectionObserver(cb, {threshold: [0.30]});
 
+    toAnimate.forEach( el => observer.observe(el) );
 }
 
 function changeColorNav() {
@@ -50,7 +53,8 @@ function changeColorNav() {
     }
 }
 
+
 function moverMenu() {
-    nav.toggleClass('move-menu')
-}
+    nav.toggleClass('move-menu');  
+} 
 
