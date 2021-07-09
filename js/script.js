@@ -19,20 +19,31 @@ $('.nav-menu__link').click(moverMenu)
 
 function animate() {
     
-    const toAnimate = d.querySelectorAll('.section');
+    const toAnimate = d.querySelectorAll('.fragment');
 
     const cb = (entries) => {
         entries.forEach( entry => {
 
             const anim = entry.target.querySelectorAll('.anim');
+            const id = entry.target.getAttribute('id');
 
-            entry.isIntersecting 
-            ? anim.forEach( el => el.style.animation = `${el.dataset.type} .8s forwards`)
-            : anim.forEach( el => el.style.animation = `${el.dataset.type}-disappear .8s forwards`);
+
+            if( entry.isIntersecting ) {
+
+                anim.forEach( el => el.style.animation = `${el.dataset.type} .8s forwards`)
+                d.querySelector(`a[href="#${id}"]`).classList.add('active');
+
+            } else {
+
+                anim.forEach( el => el.style.animation = `${el.dataset.type}-disappear .8s forwards`);                
+                d.querySelector(`a[href="#${id}"]`).classList.remove('active');
+
+
+            }
         })
     }
 
-    const observer = new IntersectionObserver(cb, {threshold: [0.30]});
+    const observer = new IntersectionObserver(cb, {threshold: [0.48]});
 
     toAnimate.forEach( el => observer.observe(el) );
 }
