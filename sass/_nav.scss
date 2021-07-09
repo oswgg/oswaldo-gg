@@ -31,14 +31,19 @@
             font-size: .8em;
             text-decoration: none;
             color: #fff;
-
+            transition: color .2s;
 
             &:hover {
                 color: var(--color-sec);
             }
         }
+
+        .nav-menu__link.active { 
+            color: var(--color-sec); 
+        }   
     }
 }
+
 
 
 
