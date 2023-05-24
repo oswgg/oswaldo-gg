@@ -1,56 +1,52 @@
 :root {
-    --color-main: #eeeeee;
-    --color-sec: #c2c2c2;
-    --color-name: #ff6666
+   --color-main: #eeeeee;
+   --color-sec: #c2c2c2;
+   --color-name: #ff6666;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
 }
 
 #open-menu {
-    display: none
+   display: none;
 }
 
 body {
-    font-size: 18px
+   font-size: 18px;
 }
 
-::-webkit-scrollbar { 
-    width: 10px;
-    padding-top: 20px;
-    background: #fff;
+::-webkit-scrollbar {
+   width: 10px;
+   padding-top: 20px;
+   background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: gray;
-    border: 2px solid #fff;
+   border-radius: 10px;
+   background-color: gray;
+   border: 2px solid #fff;
 }
 
 .main {
-    background: var(--color-main);
-    width: 100%
+   background: var(--color-main);
+   width: 100%;
 }
 
 .text {
-    color: #000;
-    font-size: 1em
+   color: #000;
+   font-size: 1em;
 }
 
 .title {
-    font-size: 2em;
-    color: #000;
-    font-weight: 600
-}
-
-.name {
-    font-weight: 300
+   font-size: 2em;
+   color: #000;
+   font-weight: 600;
 }
